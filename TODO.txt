@@ -1,0 +1,28 @@
+- CHORDMAKER: aggiustare gli alias per l'accordo MI MIB SOL SI   //
+- METRONOME: gestures
+- ALL: cookies
+- ALL: language //
+- ALL: helper //
+- ALL: dark mode //
+- ALL: adaptive
+- All: font
+- CHORDMAKER: i18n chord names // 
+- METRONOME: tap function //
+- METRONOME: no dark beat  //
+- METRONOME: sound icons
+- METRONOME: colorpicker
+- SHOWMETRONOME: controls //
+- CHORDMAKER: Tasto reset //
+- CHORDMAKER: freccia per ingrandire //
+- CHORDMAKER: seleziona tonica //
+- CHORDMAKER: these notes are included in ?
+- NOTEFINDER tradurre lingua nome accordo
+- NOTEFINDER inserisci tonica //
+
+-INFO: fare info di tutti
+
+Scala di riferimento
+
+--- UX UI --- 
+- togliere riga header
+https://dribbble.com/shots/8515761-Aplanet-Mobile

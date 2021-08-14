@@ -1,0 +1,41 @@
+ion-content {
+  // --background: transparent;
+  --background: url('../../../assets/background.jpg') no-repeat center center / cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // --background: aqua;
+}
+
+ion-toolbar {
+  --background: transparent;
+}
+
+ion-menu-button {
+  background-color: white;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+
+.img-title {
+  max-width: 60vmin;
+  max-height: 60vmin;
+  margin:auto;
+ }
+ 
+.img-col {
+  max-width: 30%;
+  margin:auto;
+}
+
+
+.title {
+  color: var(--ion-color-light);
+  font-size: 4rem;
+}
+.subtitle {
+  color: var(--ion-color-light);
+  font-size: 1.5rem;
+}
+

@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-item lines="none">
+      <ion-title style="padding: 0; text-align: left;">
+        {{'home.notefinder' | translate}}
+      </ion-title>
+      <ion-icon name="information-circle-outline" color="medium" size="large" slot="end" (click)="openModal()">
+      </ion-icon>
+    </ion-item>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-item class="select">
+          <label *ngIf="!key"> {{'notefinder.insert' | translate}} </label>
+          <ion-select [(ngModel)]="key" slot="end" color="light" interface="popover" (ionChange)="searchChord()">
+            <ion-select-option *ngFor="let note of scale" [value]="note"> {{ note | musicNotation }}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="3" *ngFor="let tile of qualitiesTiles">
+        <ion-button [color]="tile.color" expand="block" class="button-tiles" (click)="selectQualitiesTiles(tile)">
+          {{tile.name | translate}}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12/5" *ngFor="let tile of gradesTiles">
+        <ion-button [color]="tile.color" expand="block" class="button-tiles" (click)="selectGradeTile(tile)">
+          {{tile.name | musicNotation}}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-searchbar animated="true" class="button-tiles" [placeholder]="'notefinder.search' | translate" color="light"
+    (ionChange)="searchbarChange($event); searchChord()"></ion-searchbar>
+
+  <br>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card *ngFor="let chord of chords" class="card outer">
+          <app-chord [chord]="chord" (chordLink)="inputChord($event)"></app-chord>
+
+        </ion-card>
+
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>

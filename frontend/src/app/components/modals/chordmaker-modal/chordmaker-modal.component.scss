@@ -1,0 +1,21 @@
+ion-button {
+    pointer-events: none
+}
+
+.card-tiles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-height: calc(--width *60/100);
+    --width: 100%;
+    width: 100%;
+    margin: 0;
+    border: 1px solid var(--ion-color-medium); 
+    color: var(--ion-color-light-contrast);
+}
+
+.outer {
+    border: 1px solid var(--ion-color-medium); 
+}
+

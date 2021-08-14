@@ -1,0 +1,43 @@
+ion-content {
+    height: 100%;
+}
+
+ion-input {
+    text-align: right;
+}
+
+ion-text {
+    font-size: medium;
+    padding-left: 2%;
+    padding-right: 2%;
+} 
+
+.center {
+    text-align: center;
+}
+
+.showColor {
+    margin: 0 auto;
+    width: 6vmin;
+    height: 6vmin;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: grey;
+}
+
+.bpm {
+    font-size: larger;
+    width: 30vmin;
+    height: 16vmin;
+    opacity: 1;
+    --border-color: var(--ion-color-medium);
+    --color: var(--ion-color-dark);
+}
+
+.tap {
+    width: 20vmin;
+    height: 12vmin;
+    --border-color: var(--ion-color-secondary);
+    --color: var(--ion-color-dark);
+    --color-activated: transparent
+}

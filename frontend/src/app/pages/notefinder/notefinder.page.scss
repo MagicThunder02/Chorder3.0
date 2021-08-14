@@ -1,0 +1,27 @@
+.button-tiles {
+    text-transform: capitalize;
+    background-color: var(--ion-color-light-tint);
+
+    max-width: 94%;
+    margin: 3%;
+    padding: 0;
+    --border-radius: 5px;
+    border-radius: 5px;
+
+    border: 1px solid gray;
+  }
+
+  .select {
+    padding: 0;
+    --background: var(--ion-color-light-tint);
+
+    --border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--ion-color-medium); 
+}
+
+
+  .card {
+    border: 1px solid var(--ion-color-medium); 
+    font-weight: normal;
+  }

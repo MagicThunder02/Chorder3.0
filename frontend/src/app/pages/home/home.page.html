@@ -1,0 +1,65 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col>
+        <ion-img class="img-title" src="/assets/parrot.svg"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-text class="title">
+          Chorder
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-text class="subtitle">
+          The ultimate music tool
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ng-container *ngFor="let page of appPages">
+
+        <ion-col size="6">
+          <ion-card [routerDirection]="'root'" [routerLink]="[page.url]" color="light">
+            <ion-card-header>
+              <ion-img class="img-col" [src]="page.imageUrl"></ion-img>
+            </ion-card-header>
+            <ion-card-content class="ion-text-center">
+              {{page.title | translate}}
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ng-container>
+    </ion-row>
+  </ion-grid>
+
+  <!-- </ion-card>  -->
+
+  <!-- <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>{{'home.pages' | translate}}</ion-label>
+    </ion-list-header>
+    <ng-container *ngFor="let p of appPages">
+      <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+        <ion-icon slot="start" color="medium" [name]="p.icon"></ion-icon>
+        <ion-label>{{p.title | translate}}</ion-label>
+      </ion-item>
+    </ng-container>
+  </ion-list> -->
+</ion-content>

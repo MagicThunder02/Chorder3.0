@@ -1,0 +1,25 @@
+
+ion-button, ion-range, ion-toggle{
+    pointer-events: none
+}
+
+.showColor {
+    margin: 0 auto;
+    width: 6vmin;
+    height: 6vmin;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: grey;
+}
+
+.tap {
+    width: 20vmin;
+    height: 12vmin;
+  
+    --border-color: var(--ion-color-secondary);
+    --color: var(--ion-color-dark);
+}
+
+.card {
+    border: 1px solid var(--ion-color-medium);
+}

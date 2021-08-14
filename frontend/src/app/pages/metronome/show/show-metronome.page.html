@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-title style="padding: 0;" class="ion-text-center">
+      {{'home.metronome' | translate}} {{'\u2669'}} = {{metronome.data.showBpm}}
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+</ion-content>
+
+<ng-container *ngIf="metronome">
+
+
+  <ng-container *ngFor="let track of metronome.data.tracks">
+    <div *ngFor="let ball of track.drawings.balls" [style.background]="ball.color" [style.height]="ball.diameter + 'px'"
+      [style.width]="ball.diameter + 'px'" [style.left]="ball.cX + 'px'" [style.top]="ball.cY + 'px'" class="ball">
+    </div>
+
+    <!-- <ng-container *ngIf="metronome.data.tracks.length > 1"> -->
+    <ng-container *ngFor="let track of metronome.data.tracks">
+
+      <div *ngIf="track.beats > 1"
+        [style.border]="track.drawings.circle.thickness + 'px' + ' solid ' + track.drawings.circle.color"
+        [style.height]="track.drawings.circle.radius + 'px'" [style.width]="track.drawings.circle.radius + 'px'"
+        [style.left]="track.drawings.circle.cX + 'px'" [style.top]="track.drawings.circle.cY + 'px'"
+        class="circumpherence">
+      </div>
+
+      <div *ngIf="track.beats > 1"
+        [style.border-bottom]="track.drawings.line.thickness + 'px' + ' solid ' + track.drawings.line.color"
+        [style.left]="track.drawings.line.cX + 'px'" [style.top]="track.drawings.line.cY + 'px'" class="line">
+      </div>
+    </ng-container>
+    <!-- </ng-container> -->
+    <!-- <ion-text> {{index}}</ion-text> -->
+  </ng-container>
+</ng-container>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-grid class="ion-no-padding">
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding center">
+          <ion-button color="secondary" (click)="metronome.runMetronome('stop'); closeModal()">
+            <ion-icon name="arrow-back"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col class="ion-no-padding center">
+          <ion-button color="secondary" (click)="metronome.runMetronome('start'); metronome.refreshActualBpm();">
+            <ion-icon name="play"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col class="ion-no-padding center">
+          <ion-button color="secondary" (click)="metronome.runMetronome('pause')">
+            <ion-icon name="stop"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <!-- <ion-col>
+          <ion-button color="secondary" (click)="metronome.runMetronome('addBpm')">
+            <ion-icon name="add"></ion-icon>
+          </ion-button>
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
