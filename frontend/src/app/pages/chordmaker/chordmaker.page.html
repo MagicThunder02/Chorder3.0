@@ -1,21 +1,7 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
+<app-header [title]="'home.chordmaker'" [icon]="'information-circle'"></app-header>
 
-    <ion-item lines="none">
-      <ion-title style="padding: 0; text-align: left;">
-        {{'home.chordmaker' | translate}}
-      </ion-title>
-      <ion-icon name="information-circle-outline" color="medium" size="large" slot="end" (click)="openModal()">
-      </ion-icon>
-    </ion-item>
 
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
+<ion-content fullscreen="true">
 
   <ion-grid>
     <ion-row>
@@ -29,13 +15,13 @@
     <ion-row class="row-tiles">
       <ion-col *ngFor="let tile of tiles" class="col-tiles">
 
-        <ion-button [color]="tile.color" (click)="selectTile(tile)" class="button-tiles">
+        <ion-card [color]="tile.color" (click)="selectTile(tile)" class="button-tiles">
 
           <ion-text class="button-title">
             {{tile.name | musicNotation}}
           </ion-text>
 
-        </ion-button>
+        </ion-card>
 
       </ion-col>
     </ion-row>

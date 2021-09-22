@@ -6,44 +6,35 @@ import { Injectable } from '@angular/core';
 export class MenuService {
 
   public appPages = [
-    // {
-    //   title: 'Home',
-    //   url: '/home',
-    //   imageUrl: '/assets/parrot.svg',
-    //   icon: 'home-outline'
-    // },
+    {
+      title: 'Home',
+      url: '/home',
+      imageUrl: '/assets/parrot.svg',
+    },
     {
       title: 'ChordMaker',
       url: '/chordmaker',
-      imageUrl: '/assets/parrot.svg',
-      color: 'chordmaker',
-      icon: 'hammer-outline'
+      imageUrl: '/assets/red-bird-blob.svg',
+
     },
     {
       title: 'Notefinder',
       url: '/notefinder',
-      imageUrl: '/assets/parrot.svg',
-      color: 'notefinder',
-      icon: 'search-outline'
+      imageUrl: '/assets/black-bird-blob.svg',
+
     },
     {
       title: 'home.metronome',
       url: '/metronome',
-      imageUrl: '/assets/parrot.svg',
-      color: 'metronome',
-      icon: 'stopwatch-outline'
+      imageUrl: '/assets/blue-bird-blob.svg',
+
     },
-    // {
-    //   title: 'home.instrument',
-    //   url: '/instrument',
-    //   icon: 'musical-notes-outline'
-    // },
+
     {
       title: 'home.options',
       url: '/options',
-      imageUrl: '/assets/parrot.svg',
-      color: 'options',
-      icon: 'settings-outline'
+      imageUrl: '/assets/pink-bird-blob.svg',
+
     }
   ];
 

@@ -1,0 +1,23 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar>
+    <ion-grid fixed>
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col size="2">
+          <ion-buttons>
+            <ion-menu-button color="silver"></ion-menu-button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col size="8">
+          <ion-title class="ion-text-center" color="silver">
+            {{title | translate}}
+          </ion-title>
+        </ion-col>
+        <ion-col class="ion-text-right" size="2">
+          <ion-icon [name]="icon" size="large" color="silver" (click)="openModal()">
+          </ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-toolbar>
+</ion-header>

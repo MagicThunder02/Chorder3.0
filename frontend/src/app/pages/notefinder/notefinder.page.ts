@@ -21,6 +21,12 @@ export interface Tile {
 })
 
 export class NotefinderPage implements OnInit {
+
+  slideOpts: {
+    spaceBetween: 0,
+    slidesPerView: 1.15,
+  };
+
   private musicNotationPipe = new MusicNotationPipe(this.global);
 
   public scale: string[] = [];

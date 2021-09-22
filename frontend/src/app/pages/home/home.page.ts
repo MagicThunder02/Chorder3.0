@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 import { TranslateService } from '@ngx-translate/core';
 import { CookieService } from 'ngx-cookie-service';
 import { MenuService } from '../../services/menu.service';
@@ -14,7 +15,12 @@ export class HomePage implements OnInit {
   appPages: any[];
   title: string;
 
-  constructor(private translate: TranslateService, private cookie: CookieService, private menu: MenuService) {
+  constructor(
+    private translate: TranslateService,
+    private cookie: CookieService,
+    private menu: MenuService,
+    private menuCtrl: MenuController
+  ) {
     this.appPages = menu.appPages;
   }
 
@@ -30,7 +36,12 @@ export class HomePage implements OnInit {
         }); */
   }
 
+  menuClick() {
+    this.menuCtrl.toggle();
+  }
+
   ngOnInit() {
+    console.log('hello ghito');
 
   }
 }

@@ -90,7 +90,7 @@ export class ChordmakerPage implements OnInit {
   colorTiles() {
 
     this.tiles.forEach(tile => {
-      tile.color = "light";
+      tile.color = "silver";
     })
 
     this.selectedTiles.forEach((selectedTile, idx) => {
@@ -99,10 +99,10 @@ export class ChordmakerPage implements OnInit {
       })
 
       if (idx == 0) {
-        found.color = "tertiary";
+        found.color = "ruby";
       }
       else {
-        found.color = "secondary";
+        found.color = "magenta";
       }
 
     })
@@ -148,7 +148,7 @@ export class ChordmakerPage implements OnInit {
 
     this.selectedTiles = [];
     this.chord.notes.forEach(note => {
-      this.selectedTiles.push({ name: note, color: "light" })
+      this.selectedTiles.push({ name: note, color: "silver" })
     })
 
     this.colorTiles();
@@ -160,7 +160,7 @@ export class ChordmakerPage implements OnInit {
   ngOnInit() {
     let scale = ["Cb", "C", "C#", "Db", "D", "D#", "Eb", "E", "E#", "Fb", "F", "F#", "Gb", "G", "G#", "Ab", "A", "A#", "Bb", "B", "B#"]
     scale.forEach((note, idx) => {
-      this.tiles.push({ name: note, color: "light", selected: false })
+      this.tiles.push({ name: note, color: "silver", selected: false })
     });
   }
 

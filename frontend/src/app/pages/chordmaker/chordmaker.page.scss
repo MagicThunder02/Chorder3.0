@@ -1,3 +1,6 @@
+
+
+
 .col-tiles {
   text-transform: none;
   flex: 0 0 calc(calc(4 / var(--ion-grid-columns, 12)) * 100%);
@@ -19,7 +22,7 @@
   border-radius: 5px;
   margin: auto;
   height: 100%;
-  border: 1px solid gray;
+  border-bottom: 3px solid var(--ion-color-deep); 
 }
 
 .reset-button {
@@ -66,7 +69,9 @@
   aspect-ratio: initial;
 }
 
-
+ion-content {
+  --background: linear-gradient(to bottom, #135058 , #ebebeb);
+}
 
 @media (orientation: landscape) {
   

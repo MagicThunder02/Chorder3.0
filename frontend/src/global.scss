@@ -25,45 +25,47 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-
-.ion-color-chordmaker {
-  --ion-color-base: var(--ion-color-chordmaker);
-  --ion-color-base-rgb: var(--ion-color-chordmaker-rgb);
-  --ion-color-contrast: var(--ion-color-chordmaker-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-chordmaker-contrast-rgb);
-  --ion-color-shade: var(--ion-color-chordmaker-shade);
-  --ion-color-tint: var(--ion-color-chordmaker-tint);
+.ion-color-silver {
+  --ion-color-base: var(--ion-color-silver);
+  --ion-color-base-rgb: var(--ion-color-silver-rgb);
+  --ion-color-contrast: var(--ion-color-silver-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-silver-contrast-rgb);
+  --ion-color-shade: var(--ion-color-silver-shade);
+  --ion-color-tint: var(--ion-color-silver-tint);
+}
+.ion-color-deep {
+  --ion-color-base: var(--ion-color-deep);
+  --ion-color-base-rgb: var(--ion-color-deep-rgb);
+  --ion-color-contrast: var(--ion-color-deep-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-deep-contrast-rgb);
+  --ion-color-shade: var(--ion-color-deep-shade);
+  --ion-color-tint: var(--ion-color-deep-tint);
 }
 
-.ion-color-notefinder {
-  --ion-color-base: var(--ion-color-notefinder);
-  --ion-color-base-rgb: var(--ion-color-notefinder-rgb);
-  --ion-color-contrast: var(--ion-color-notefinder-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-notefinder-contrast-rgb);
-  --ion-color-shade: var(--ion-color-notefinder-shade);
-  --ion-color-tint: var(--ion-color-notefinder-tint);
+.ion-color-ruby {
+  --ion-color-base: var(--ion-color-ruby);
+  --ion-color-base-rgb: var(--ion-color-ruby-rgb);
+  --ion-color-contrast: var(--ion-color-ruby-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-ruby-contrast-rgb);
+  --ion-color-shade: var(--ion-color-ruby-shade);
+  --ion-color-tint: var(--ion-color-ruby-tint);
 }
 
-.ion-color-metronome {
-  --ion-color-base: var(--ion-color-metronome);
-  --ion-color-base-rgb: var(--ion-color-metronome-rgb);
-  --ion-color-contrast: var(--ion-color-metronome-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-metronome-contrast-rgb);
-  --ion-color-shade: var(--ion-color-metronome-shade);
-  --ion-color-tint: var(--ion-color-metronome-tint);
-}
-
-.ion-color-options {
-  --ion-color-base: var(--ion-color-options);
-  --ion-color-base-rgb: var(--ion-color-options-rgb);
-  --ion-color-contrast: var(--ion-color-options-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-options-contrast-rgb);
-  --ion-color-shade: var(--ion-color-options-shade);
-  --ion-color-tint: var(--ion-color-options-tint);
+.ion-color-magenta {
+  --ion-color-base: var(--ion-color-magenta);
+  --ion-color-base-rgb: var(--ion-color-magenta-rgb);
+  --ion-color-contrast: var(--ion-color-magenta-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-magenta-contrast-rgb);
+  --ion-color-shade: var(--ion-color-magenta-shade);
+  --ion-color-tint: var(--ion-color-magenta-tint);
 }
 
 ion-modal.fullscreen {
     --width: 100%;
     --height: 100%;
     --border-radius: 0;
+    }
+
+    ion-fab {
+      margin-left: 2%;
     }

@@ -1,24 +1,37 @@
 <ion-app>
-  <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Chorder</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content>
-        <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
-              <ion-label>
-                {{p.title | translate}}
-              </ion-label>
-            </ion-item>
-          </ion-menu-toggle>
-        </ion-list>
-      </ion-content>
-    </ion-menu>
-    <ion-router-outlet id="main-content"></ion-router-outlet>
-  </ion-split-pane>
+
+  <ion-menu contentId="main-content" type="overlay">
+
+    <ion-content>
+
+      <ion-grid class="menu-header">
+        <ion-row style="height: 100%;">
+          <ion-col size="12" class="menu-header-text">
+            <ion-text>
+              Chorder
+            </ion-text>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+
+
+      <ion-menu-toggle auto-hide=" false" *ngFor="let p of appPages">
+
+        <ion-item lines="none" [routerDirection]="'root'" [routerLink]="[p.url]">
+          <ion-icon slot="start" [src]="p.imageUrl"></ion-icon>
+          <ion-label class="label-text">
+            {{p.title | translate}}
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+
+
+
+
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+
 </ion-app>

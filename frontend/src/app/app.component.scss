@@ -1,0 +1,34 @@
+
+ion-content {
+    --background: linear-gradient(to bottom, #135058 , #ebebeb);
+  }
+
+ion-list, ion-item, ion-label {
+    background: transparent;
+    --background: transparent;
+}
+
+ion-icon {
+    font-size: 4em;
+}
+
+.label-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--ion-color-silver);
+}
+
+.menu-header {
+    height: 8em;
+    color: var(--ion-color-silver);
+}
+
+.menu-header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3em;
+    font-weight: bolder;
+
+}

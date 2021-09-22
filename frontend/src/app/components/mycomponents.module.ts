@@ -11,6 +11,7 @@ import { ChordComponent } from './chord/chord.component';
 import { ChordmakerModalComponent } from './modals/chordmaker-modal/chordmaker-modal.component';
 import { NotefinderModalComponent } from './modals/notefinder-modal/notefinder-modal.component';
 import { MetronomeModalComponent } from './modals/metronome-modal/metronome-modal.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,19 @@ import { MetronomeModalComponent } from './modals/metronome-modal/metronome-moda
       }
     }),
   ],
-  declarations: [ChordComponent, ChordmakerModalComponent, NotefinderModalComponent, MetronomeModalComponent],
-  exports: [ChordComponent, ChordmakerModalComponent, NotefinderModalComponent, MetronomeModalComponent]
+  declarations: [
+    ChordComponent,
+    ChordmakerModalComponent,
+    NotefinderModalComponent,
+    MetronomeModalComponent,
+    HeaderComponent
+  ],
+  exports: [
+    ChordComponent,
+    ChordmakerModalComponent,
+    NotefinderModalComponent,
+    MetronomeModalComponent,
+    HeaderComponent
+  ]
 })
 export class MyComponentsModule { }
