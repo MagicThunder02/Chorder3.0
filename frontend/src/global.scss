@@ -25,6 +25,24 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+@font-face {   
+  font-family: 'courgette';    //This is what we are going to call
+  src: url('./assets/fonts/Courgette-Regular.ttf');
+}
+
+ion-content {
+  --background: var(--ion-color-white);
+}
+
+.ion-color-white {
+  --ion-color-base: var(--ion-color-white);
+  --ion-color-base-rgb: var(--ion-color-white-rgb);
+  --ion-color-contrast: var(--ion-color-white-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-white-contrast-rgb);
+  --ion-color-shade: var(--ion-color-white-shade);
+  --ion-color-tint: var(--ion-color-white-tint);
+}
+
 .ion-color-silver {
   --ion-color-base: var(--ion-color-silver);
   --ion-color-base-rgb: var(--ion-color-silver-rgb);
@@ -32,14 +50,6 @@
   --ion-color-contrast-rgb: var(--ion-color-silver-contrast-rgb);
   --ion-color-shade: var(--ion-color-silver-shade);
   --ion-color-tint: var(--ion-color-silver-tint);
-}
-.ion-color-deep {
-  --ion-color-base: var(--ion-color-deep);
-  --ion-color-base-rgb: var(--ion-color-deep-rgb);
-  --ion-color-contrast: var(--ion-color-deep-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-deep-contrast-rgb);
-  --ion-color-shade: var(--ion-color-deep-shade);
-  --ion-color-tint: var(--ion-color-deep-tint);
 }
 
 .ion-color-ruby {
@@ -51,14 +61,6 @@
   --ion-color-tint: var(--ion-color-ruby-tint);
 }
 
-.ion-color-magenta {
-  --ion-color-base: var(--ion-color-magenta);
-  --ion-color-base-rgb: var(--ion-color-magenta-rgb);
-  --ion-color-contrast: var(--ion-color-magenta-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-magenta-contrast-rgb);
-  --ion-color-shade: var(--ion-color-magenta-shade);
-  --ion-color-tint: var(--ion-color-magenta-tint);
-}
 
 ion-modal.fullscreen {
     --width: 100%;

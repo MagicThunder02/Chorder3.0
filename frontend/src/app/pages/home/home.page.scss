@@ -7,9 +7,6 @@
 //   // --background: aqua;
 // }
 
-ion-content {
-  --background: linear-gradient(to bottom, #135058 , #ebebeb);
-}
 
 ion-grid {
   height: 100%;
@@ -52,15 +49,20 @@ ion-card{
 .title {
   font-size: 4em;
   font-weight: bolder;
-  color: var(--ion-color-silver);
+  color: var(--ion-color-ruby);
+  font-family: 'courgette';
+  text-shadow: 2px 2px var(--ion-color-white);;
   
 }
 
 .subtitle {
   font-size: 3vh;
   font-weight: bold;
-  color: var(--ion-color-silver);
+  color: var(--ion-color-ruby);
+  
+  
 }
+
 
 .description {
   font-size: 1.3em;
